@@ -1,0 +1,30 @@
+## Express Setup
+1: set up express back end map
+2. fetch data from the poke api
+3. display it
+
+
+## Database Setup
+
+
+
+BASIC WORKINGS
+/* Required Modules and Variables */
+const express = require('express')
+const ejsLayouts = require('express-ejs-layouts')
+const rowdy = require('rowdy-logger')
+
+const app = express()
+const rowdyResults = rowdy.begin(app)
+const PORT = process.env.PORT || 3000
+
+/* Controllers */
+app.get('/', (req, res) => {
+    res.send('yo i work')
+})
+
+/* Routes */
+
+app.listen(PORT, () => {
+    rowdyResults.print()
+})
