@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(59, 147, 173, 0.918);
+    padding: 10px;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}

@@ -1,0 +1,9 @@
+<h1>Fav pokemon</h1>
+
+<% pokemons.forEach(pokemon=> { %>
+    <div class="card">
+        <a href="/pokemons/<%= pokemon.name %>">
+            <%= pokemon.name %>
+        </a>
+    </div>
+    <% }) %>
